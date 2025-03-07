@@ -1,0 +1,16 @@
+on: push
+
+jobs: 
+  job1:
+    name: Get current date
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Get the current date
+        run: date
+  
+  job2:
+    name: Echo name
+    runs-on: windows-latest
+    steps:
+      - name: Echo Rajvir Sangha
+        run: echo Rajvir Sangha
